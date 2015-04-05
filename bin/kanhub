@@ -2,11 +2,14 @@
 
 "use strict"
 
-var trello = require('node-trello');
-var fs = require('fs');
+var trello = require('node-trello'),
+    fs = require('fs'),
+    chalk = require('chalk');
 
-var data = fs.readFileSync('~/.kanhub', 'utf-8');
+var data = JSON.parse(fs.readFileSync(process.env.HOME + '/.kanhub', 'utf8'));
+var t = new trello(data['trello']['key'], data['trello']['secret']);
 
-console.log(data);
-
-// var t = new trello(, )
+t.get('/1/boards/Wn2wCDCu?key=data["key"]', function(err, data) {
+  if (err) throw err;
+  console.log(data);
+});
