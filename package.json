@@ -1,0 +1,29 @@
+{
+  "name": "kanhub",
+  "version": "0.0.1",
+  "description": "KanHub - Create todo list on Trello in Backlog board using Issues of Github",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charlenopires/kanhub.git"
+  },
+  "author": "Charleno Pires <charleno@gmail.com> (http://www.girassolbit.com.br/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/charlenopires/kanhub/issues"
+  },
+  "homepage": "https://github.com/charlenopires/kanhub",
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "node-trello": "^1.1.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.1"
+  },
+  "bin": {
+    "kanhub": "./bin/kanhub"
+  }
+}

@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+"use strict"
+
+var trello = require('node-trello');
+var fs = require('fs');
+
+var data = fs.readFileSync('~/.kanhub', 'utf-8');
+
+console.log(data);
+
+// var t = new trello(, )
